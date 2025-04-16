@@ -252,3 +252,4 @@ Instalasi sudah selesai.
 ### TASK 3
 
 Installasi Nginx di dalam Ubuntu Server
+![image](https://github.com/user-attachments/assets/b8dffe51-c74b-457c-bae2-6cd634f4361f)
