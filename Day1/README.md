@@ -250,3 +250,5 @@ Instalasi sudah selesai.
 ---
 
 ### TASK 3
+
+Installasi Nginx di dalam Ubuntu Server
