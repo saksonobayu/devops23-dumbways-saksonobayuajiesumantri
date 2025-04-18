@@ -1,4 +1,63 @@
-### STEP BY STEP PERINTAH LINUX
+# Diagram Jaringan Komputer
+![taskday2 drawio](https://github.com/user-attachments/assets/de7ca0d8-cfcb-41f5-af36-83e88c9b1046)
+## Spesifikasi
+- **IP Class C**: `192.168.11.xxx`
+- **CIDR Block**:
+  - Subnet A: `192.168.11.0/30`
+  - Subnet B: `192.168.11.4/30`
+- **Subnet Mask**: `255.255.255.252` (untuk kedua subnet)
+- **Device**: 4 (PC 1, PC 2, PC 3, PC 4)
+- **DNS**: Cloudflare (`1.1.1.1`), Google (`8.8.8.8`)
+
+## Diagram
+- **Internet**: Konek ke Router.
+- **Router**: Pusat jaringan, hubungin dua subnet.
+- **Subnet A** (`192.168.11.0/30`):
+  - PC 1: `192.168.11.1`
+  - PC 2: `192.168.11.2`
+- **Subnet B** (`192.168.11.4/30`):
+  - PC 3: `192.168.11.5`
+  - PC 4: `192.168.11.6`
+
+## Catatan
+- Router ga dikasih IP di subnet biar semua IP bisa dipake PC.
+
+# Perbedaan Shell dan Bash
+## Tabel Komparasi
+
+| Aspek                | Shell                                                                 | Bash                                                                 |
+|----------------------|----------------------------------------------------------------------|----------------------------------------------------------------------|
+| **Definisi**         | Antarmuka baris perintah umum buat komunikasi dengan sistem operasi. | Bourne Again Shell, pengembangan dari Bourne Shell (sh) dengan fitur lebih kaya. |
+| **Jenis**            | Kategori, bukan shell spesifik. Contoh: sh, bash, zsh, ksh, csh.     | Jenis shell spesifik, default di banyak Linux dan macOS.             |
+| **Fitur Dasar**      | Minimal, cuma perintah dasar dan scripting sederhana.                | Lengkap: tab completion, history, alias, scripting canggih.          |
+| **Scripting**        | Bisa, tapi terbatas (kaya di sh).                                   | Kuat: dukung array, ekspansi parameter, loop kompleks.               |
+| **Interaktivitas**   | Kurang interaktif di shell dasar (sh).                              | Super interaktif: history, autocomplete, prompt kustom.              |
+| **File Konfigurasi** | Ga ada standar, beda tiap shell (misal `.profile`).                 | Pake `.bashrc` atau `.bash_profile` buat kustomisasi.                |
+| **Kecepatan**        | Shell dasar (sh) lebih cepat karena ringan.                         | Agak lambat karena fitur banyak.                                     |
+| **Ketersediaan**     | Ada di hampir semua sistem Unix/Linux (kaya sh).                    | Ada di kebanyakan Linux/macOS, tapi ga selalu default.               |
+| **Contoh Perintah**  | `sh`, `csh`, `ksh`.                                                 | `$ bash` (atau langsung di terminal kalo Bash default).              |
+| **Lisensi**          | Beda-beda per shell.                                                | Open-source, lisensi GNU GPL.                                        |
+| **Pengembang**       | Beragam (misal Stephen Bourne untuk sh).                            | Brian Fox untuk GNU, sekarang dikelola komunitas.                    |
+
+## Penjelasan Singkat
+- **Shell** itu kayak "kakeknya" semua antarmuka baris perintah. Contohnya Bourne Shell (sh) yang sederhana banget, cocok buat script ringan tapi kurang nyaman buat interaksi.
+- **Bash** adalah shell modern, kayak versi upgrade dari sh. Punya fitur canggih kaya autocomplete, history, dan scripting kuat, makanya jadi favorit di Linux.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Step by Step Perintah Linux
 **1. Menuliskan perintah untuk update software linux**
 ```bash
 sudo apt update
