@@ -34,10 +34,7 @@
 | **Interaktivitas**   | Kurang interaktif di shell dasar (sh).                              | Super interaktif: history, autocomplete, prompt kustom.              |
 | **File Konfigurasi** | Ga ada standar, beda tiap shell (misal `.profile`).                 | Pake `.bashrc` atau `.bash_profile` buat kustomisasi.                |
 | **Kecepatan**        | Shell dasar (sh) lebih cepat karena ringan.                         | Agak lambat karena fitur banyak.                                     |
-| **Ketersediaan**     | Ada di hampir semua sistem Unix/Linux (kaya sh).                    | Ada di kebanyakan Linux/macOS, tapi ga selalu default.               |
-| **Contoh Perintah**  | `sh`, `csh`, `ksh`.                                                 | `$ bash` (atau langsung di terminal kalo Bash default).              |
-| **Lisensi**          | Beda-beda per shell.                                                | Open-source, lisensi GNU GPL.                                        |
-| **Pengembang**       | Beragam (misal Stephen Bourne untuk sh).                            | Brian Fox untuk GNU, sekarang dikelola komunitas.                    |
+
 
 ## Penjelasan Singkat
 - **Shell** itu kayak "kakeknya" semua antarmuka baris perintah. Contohnya Bourne Shell (sh) yang sederhana banget, cocok buat script ringan tapi kurang nyaman buat interaksi.
@@ -199,3 +196,16 @@ ctrl + x
 ```
 ![Screenshot_22](https://github.com/user-attachments/assets/d314083b-2730-421c-88b6-aaf61d1353b1)
 ![Screenshot_23](https://github.com/user-attachments/assets/789ac1a5-a5ce-4575-9ef3-c276afd367d1)
+
+**18. Perintah untuk melihat size file**
+```bash
+du -h file.js
+```
+![image](https://github.com/user-attachments/assets/d8912dd1-a55a-4a15-9486-87411f70d3cb)
+
+**19. Perintah untuk install package tool**
+```bash
+sudo apt-get install sl
+```
+![image](https://github.com/user-attachments/assets/781245b3-924f-4f83-af90-b239c3998fbc)
+
