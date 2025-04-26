@@ -98,8 +98,84 @@ gh repo create --public --source=. --push
 ![gambar1](./images/17.png)
 
 **3. Manage repository tugas kalian (devops23-dumbways-<nama>) menggunakan terminal!
-* 
+* karena sudah login akun github sebelumnya, maka langkah selanjutnya adalah clone github.
+buka repositori github dan pilih code warna hijau, pilih yang SSH
 ```bash
-
+git clone git@github.com:saksonobayu/devops23-dumbways-saksonobayuajiesumantri.git
 ```
+![gambar1](./images/18.png)
+
+* setelah berhasil diclone cek status dengan perintah berikut
+```bash
+git status
+```
+![gambar1](./images/19.png)
+
+* membuat branch baru yaitu branch master 
+```bash
+git checkout -b master
+```
+![gambar1](./images/20.png)
+
+* membuat file baru
+```bash
+cat > kodenuklir.txt
+snis67
+```
+![gambar1](./images/21.png)
+
+* register file sebelum di commit
+```bash
+git add kodenuklir.txt
+```
+![gambar1](./images/22.png)
+
+
+* commit file dengan deskripsi "commit di branch master"
+```bash
+git commit -m "commit di branch master"
+```
+![gambar1](./images/23.png)
+
+* push file ke branch baru
+```bash
+git push -u origin master
+```
+![gambar1](./images/24.png)
+
+* pull repositori dengan versi terakhir
+```bash
+git pull origin master
+```
+![gambar1](./images/25.png)
+
+* mengambil semua folder dan file
+```bash
+git fetch --all
+```
+![gambar1](./images/26.png)
+
+* menampilkan semua branch
+```bash
+git branch -a
+```
+![gambar1](./images/27.png)
+
+* perintah untuk keluar dari branch master menuju ke branch main
+```bash
+git checkout main
+```
+![gambar1](./images/28.png)
+
+* menampilkan semua history di dalam repositori
+```bash
+git log
+```
+![gambar1](./images/29.png)
+
+
+
+
+
+
 
