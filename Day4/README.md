@@ -97,7 +97,7 @@ gh repo create --public --source=. --push
 ```
 ![gambar1](./images/17.png)
 
-**3. Manage repository tugas kalian (devops23-dumbways-<nama>) menggunakan terminal!**
+**3. Manage repository tugas kalian (devops23-dumbways-<nama>) menggunakan terminal!
 * 
 ```bash
 
