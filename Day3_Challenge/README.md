@@ -23,10 +23,6 @@ ssh vm-dumbways
 ![gambar](./images/Screenshot_3.png)
 
 
-*
-``` bash
-
-```
 
 # 2. Rubah port SSH menjadi 6969
 * masuk ke config sshd_config dengan nano
