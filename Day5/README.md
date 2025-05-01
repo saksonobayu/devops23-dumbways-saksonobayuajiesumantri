@@ -46,58 +46,98 @@ sudo ufw status
 
 ![Screenshot_1](./images/Screenshot_27.png)
 
-**7. Melakukan git clone dumbflix-frontend**
+**7. Melakukan git clone wayshub-frontend**
 ```bash
-git clone git@github.com:dumbwaysdev/dumbflix-frontend.git 
+git clone git@github.com:dumbwaysdev/wayshub-frontend.git
 ```
 
-![Screenshot_1](./images/Screenshot_14.png)
+![Screenshot_1](./images/Screenshot_35.png)
 
-**8. Melakukan git clone dumbflix-frontend**
+**8. Masuk ke direktori wayshub-frontend**
 ```bash
-git clone git@github.com:dumbwaysdev/dumbflix-frontend.git 
+cd wayshub-frontend
 ```
 
-![Screenshot_1](./images/Screenshot_14.png)
+![Screenshot_1](./images/Screenshot_36.png)
 
-**9. Masuk ke direktori dumbflix-frontend**
-```bash
-cd dumbflix-frontend
-```
-
-![Screenshot_1](./images/Screenshot_15.png)
-
-**10. Menggunakan npm versi 13**
+**9. Menggunakan npm versi 13**
 ```bash
 nvm use 13
 ```
 
-![Screenshot_1](./images/Screenshot_22.png)
+![Screenshot_1](./images/Screenshot_37.png)
 
-**11. Melakukan perintah npm start untuk deploy lokal project dumbflix-frontend**
+**10. Melakukan perintah npm start untuk deploy project wayshub-frontend**
 ```bash
 npm start
 ```
 
-![Screenshot_1](./images/Screenshot_23.png)
+![Screenshot_1](./images/Screenshot_38.png)
+* nah disitu terdapat error karena dependency nya belum ada, maka install dengan npm install
 
+```bash
+npm install
+```
 
-**12. Buka browser dan akses ip address dengan port 3000**
+**11. Buka browser dan akses ip address dengan port 3000**
 ```bash
 192.168.100.200:3000
 ```
 
-![Screenshot_1](./images/Screenshot_24.png)
+![Screenshot_1](./images/Screenshot_39.png)
+![Screenshot_1](./images/Screenshot_40.png)
 
 # Python
 - Deploy app menampilkan text nama kalian!
 - Berjalan di port 5000 & bisa dibuka melalui web
 
-**1. loren ipsum**
+**1. Melakukan instalasi pip yaitu package untuk python**
 ```bash
-loren ipsum
+sudo apt install python3-pip
 ```
-![Screenshot_1](./images/Screenshot_1.png)
+![Screenshot_1](./images/Screenshot_28.png)
+
+**2. Membuat direktori python biar rapi gitu aja**
+```bash
+mkdir python
+```
+![Screenshot_1](./images/Screenshot_29.png)
+
+**3. Instalasi library flask**
+```bash
+pip install flask
+```
+![Screenshot_1](./images/Screenshot_30.png)
+
+**4. Membuat file index.py di dalam direktori python dan copy snippet code berikut**
+```bash
+cat > index.py
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return 'SAKSONO BAYU AJIE SUMANTRI!'
+
+app.run(host='0.0.0.0', port=5000)
+```
+
+![Screenshot_1](./images/Screenshot_31.png)
+
+**5. Memberi akses port 5000**
+```bash
+sudo ufw allow 5000
+sudo ufw status
+```
+![Screenshot_1](./images/Screenshot_32.png)
+
+**6. Eksekusi python dengan python3 index.py kemudian copy address ke web**
+```bash
+python3 index.py
+```
+![Screenshot_1](./images/Screenshot_33.png)
+![Screenshot_1](./images/Screenshot_34.png)
 
 # Golang
 - Deploy app menampilkan text "Golang geming!"
