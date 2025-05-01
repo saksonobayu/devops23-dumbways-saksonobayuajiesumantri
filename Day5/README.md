@@ -142,8 +142,86 @@ python3 index.py
 # Golang
 - Deploy app menampilkan text "Golang geming!"
 
-**1. loren ipsum**
+**1. Instalasi version golang dari official website https://go.dev/dl/**
 ```bash
-loren ipsum
+wget https://go.dev/dl/go1.24.2.linux-amd64.tar.gz
 ```
-![Screenshot_1](./images/Screenshot_1.png)
+
+![Screenshot_1](./images/Screenshot_41.png)
+
+**2. Menjadi super user untuk install golang https://go.dev/doc/install**
+```bash
+sudo su
+rm -rf /usr/local/go && tar -C /usr/local -xzf go1.24.2.linux-amd64.tar.gz
+```
+
+![Screenshot_1](./images/Screenshot_42.png)
+
+**3. Export golang ke path environment**
+```bash
+export PATH=$PATH:/usr/local/go/bin
+```
+
+![Screenshot_1](./images/Screenshot_43.png)
+
+**4. Mengecek versi**
+```bash
+go version
+```
+
+![Screenshot_1](./images/Screenshot_44.png)
+
+**5. Membuat direktori golang biar rapi dan buat file index.go**
+```bash
+mkdir golang
+cd golang
+nano index.go
+```
+
+![Screenshot_1](./images/Screenshot_46.png)
+
+* nah kemudian copy snipet code ke dalam file index.go
+```bash
+package main
+
+import (
+	"fmt"
+	"net/http"
+)
+
+func handler(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "<h1>Golang Geming</h1>")
+}
+
+func main() {
+	http.HandleFunc("/", handler)
+	fmt.Println("Server running on http://192.168.1.1:8080...")
+	http.ListenAndServe("192.168.100.200:8080", nil)
+}
+```
+
+![Screenshot_1](./images/Screenshot_45.png)
+
+**6. Jangan lupa kasih akses ke port 8080**
+```bash
+sudo ufw allow 8080
+```
+
+![Screenshot_1](./images/Screenshot_47.png)
+
+
+**7. Eksekusi golang dengan perintah berikut**
+```bash
+go run index.go
+```
+
+![Screenshot_1](./images/Screenshot_49.png)
+
+**8. Buka browser dan akses ip addressnya**
+```bash
+192.168.100.200:8080
+```
+
+![Screenshot_1](./images/Screenshot_48.png)
+
+
