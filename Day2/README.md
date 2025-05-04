@@ -1,26 +1,10 @@
 # Diagram Jaringan Komputer
-![taskday2 drawio](https://github.com/user-attachments/assets/de7ca0d8-cfcb-41f5-af36-83e88c9b1046)
+![jaringan network day2 drawio](https://github.com/user-attachments/assets/884f7c5f-ab22-4a2e-835c-92250902ba41)
+
 ## Spesifikasi
 - **IP Class C**: `192.168.11.xxx`
-- **CIDR Block**:
-  - Subnet A: `192.168.11.0/30`
-  - Subnet B: `192.168.11.4/30`
-- **Subnet Mask**: `255.255.255.252` (untuk kedua subnet)
-- **Device**: 4 (PC 1, PC 2, PC 3, PC 4)
-- **DNS**: Cloudflare (`1.1.1.1`), Google (`8.8.8.8`)
-
-## Diagram
-- **Internet**: Konek ke Router.
-- **Router**: Pusat jaringan, hubungin dua subnet.
-- **Subnet A** (`192.168.11.0/30`):
-  - PC 1: `192.168.11.1`
-  - PC 2: `192.168.11.2`
-- **Subnet B** (`192.168.11.4/30`):
-  - PC 3: `192.168.11.5`
-  - PC 4: `192.168.11.6`
-
-## Catatan
-- Router ga dikasih IP di subnet biar semua IP bisa dipake PC.
+- **CIDR Block**: /30
+- **Device**: 2 (PC 1, PC 2)
 
 # Perbedaan Shell dan Bash
 ## Tabel Komparasi
