@@ -87,5 +87,6 @@ bay maxlogins 1
 sudo systemctl restart ssh
 ```
 
-![image](https://github.com/user-attachments/assets/26938947-b246-4fd3-8680-41856f33d2fc)
+![image](https://github.com/user-attachments/assets/823cd663-bc56-43f5-ae62-ef64576bd8b7)
+
 
