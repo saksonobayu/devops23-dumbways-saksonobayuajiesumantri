@@ -70,7 +70,22 @@ sudo lsof -i :6969
 ![gambar](./images/Screenshot_9.png)
 
 # 3. SSH hanya bisa diakses 1 device (jika login dari device lain akan bentrok)
-*
-``` bash
+* login ke server
 
+* masuk ke direktori dan edit konfigurasi
+``` bash
+sudo nano /etc/security/limits.conf
 ```
+``` bash
+bay maxlogins 1
+```
+
+![image](https://github.com/user-attachments/assets/456611c6-2b55-4543-b769-e3b52a838e2c)
+
+* restart ssh dan coba login lagi
+``` bash
+sudo systemctl restart ssh
+```
+
+![image](https://github.com/user-attachments/assets/26938947-b246-4fd3-8680-41856f33d2fc)
+
