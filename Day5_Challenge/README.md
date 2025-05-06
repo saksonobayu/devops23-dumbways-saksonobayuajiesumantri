@@ -1,22 +1,33 @@
-# NodeJS + Python: Jalan di Background (Bisa Ngegas Terminal Lagi)
-**1. Jalankan NodeJS (Aplikasi Wayshub)**
+# NodeJS + Python: Jalan di Background
+**1. Instalasi library pm2**
+```bash
+npm install pm2 -g
+```
+
+![image](https://github.com/user-attachments/assets/6a500a13-08f7-4c75-b572-1d09fcd1a5bb)
+
+**2. Masuk ke direktori nodejs dan run dengan pm2**
 ```bash
 cd wayshub-frontend
-npm start > node.log 2>&1 &
 ```
+```bash
+pm2 start npm --name node.js -- start
+```
+![image](https://github.com/user-attachments/assets/e43eee6e-7312-4040-a88e-3bbfff90fd1d)
 
-![Screenshot](./images/Screenshot_1.png)
-* .> = Semua output disimpen di file node.log
-* & = Aplikasi jalan di belakang layar, terminal bebas dipake!
-* Cek jalan/tidak: jobs -l (kalo muncul angka, berarti oke)
   
-**2. Jalankan Python (Aplikasi Flask)**
+**3. Masuk ke direktori python dan run dengan pm2**
 ```bash
 cd python
-python3 index.py > flask.log 2>&1 &
+```
+```bash
+pm2 start index.py --name python --interpreter python3
 ```
 
-![Screenshot](./images/Screenshot_2.png)
+![image](https://github.com/user-attachments/assets/764c754e-7036-46a0-bb6a-ba9ec3544bf2)
+
+
+
 
 # Golang: Bisa Dibuka di Browser
 **1. Jalankan Golang**
@@ -31,17 +42,3 @@ go run index.go > go.log 2>&1 &
 
 
 
-**Tips kalo mau tutup terminal tapi aplikasi tetep jalan:**
-```bash
-nohup npm start &  # Untuk NodeJS
-nohup python3 index.py &  # Untuk Python
-nohup go run index.go &  # Untuk Golang
-```
-
-**Cek log kalo error:**
-```bash
-Cek log klo error
-cat node.log  # Log NodeJS
-cat flask.log  # Log Python
-cat go.log    # Log Golang
-```
