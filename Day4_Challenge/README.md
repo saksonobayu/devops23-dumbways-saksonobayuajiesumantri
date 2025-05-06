@@ -58,21 +58,20 @@ git push -u origin main
 ```
 ![gambar1](./images/Screenshot_12.png)
 
-* pull repositori dengan versi terakhir
-```bash
-git pull origin main
-```
-![gambar1](./images/Screenshot_13.png)
+* pull repositori dengan memilih pull request> new pull request
 
-* mengambil semua folder dan file
-```bash
-git fetch --all
-```
-![gambar1](./images/Screenshot_14.png)
+![image](https://github.com/user-attachments/assets/60e3c874-989e-4868-bf61-e6b437a8b31b)
 
-* menampilkan semua branch
-```bash
-git branch -a
-```
-![gambar1](./images/Screenshot_15.png)
+![image](https://github.com/user-attachments/assets/658e47fe-21ca-4519-ae49-4644d4226084)
 
+* akan muncul seperti ini kemudian ganti master menjadi main selanjutnya pilih create pull request
+
+![image](https://github.com/user-attachments/assets/e819430a-b4ec-4938-a659-889c50f83bde)
+
+* muncul halaman seperti ini kemudian isi pesan
+
+![image](https://github.com/user-attachments/assets/4d411f34-69da-42c9-b333-984fe15c015c)
+
+* kemudian cek di pull request muncul seperti ini
+
+![image](https://github.com/user-attachments/assets/06a44fb4-0ce1-4f25-8f9c-eba4d505a0ef)
